@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
       background: '#bdc3c7'
     },
     bmMenu: {
-      background: '#373a47',
+      background: 'black',
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em'
     },
@@ -57,24 +57,31 @@ const Layout = ({ children }) => {
     },
     bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)'
+    },
+    bmItem: {
+      fontFamily: 'Arimo',
+      margin: '15px',
+      padding: '15px',
+      fontWeight: "bold"
     }
+
   }
 
   return (
     <div id="outer-container">
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="side">
-        <Menu styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+        <Menu styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} disableAutoFocus>
           <Link className="menu-item" to="/">HOME</Link>
-          <Link className="menu-item" to="/about">ABOUT</Link>
           <Link className="menu-item" to="/work">WORK</Link>
           <Link className="menu-item" to="/contact">CONTACT</Link>
+          <Link className="menu-item" to="/resume">RESUME</Link>
         </Menu>
       </div>
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 900,
+          maxWidth: 1080,
           padding: `0 1.0875rem 1.45rem`,
           height:"100vh"
         }}

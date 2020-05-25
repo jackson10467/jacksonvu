@@ -4,10 +4,85 @@
 .Title{
   font-size: 150px;
   margin-top:25%;
+  animation: fadeIn ease 2s;
+}
+.Title2{
+  font-size: 150px;
+  margin-top:25%;
+  animation: fadeIn ease 3s;
+  animation-delay: 0.4s;
+  border-bottom: 25px groove;
 }
 
-@media screen and (max-width: 475px){
+.banner{
+  background-image: url(../images/desk.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height:50vh;
+  width:100%;
+  color:white;
+  background-color: black;
+}
+
+.trans{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.7;
+  height:100%;
+}
+.transText{
+  font-weight: bold;
+  font-size:50px;
+  color:white;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.about{
+  font-family: "Arimo", "sans-serif";
+}
+.aboutp{
+  font-family: "Roboto", "sans-serif";
+  font-size:50px;
+  margin-top:5%;
+  border-top: 25px groove;
+  padding:5%;
+  line-height: 1.5;
+}
+
+.img{
+  margin-left:70%;
+  max-width: 300px;
+  margin-bottom:10%;
+  font-size:50px;
+}
+
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@media screen and (max-width: 375px){
   .Title{
-    font-size:80px;
+    font-size:60px;
+    margin-top:35%;
+  }
+  .Title2{
+    font-size:60px;
+  }
+  .transText{
+    font-size:30px;
+  }
+  .aboutp{
+    font-size:25px;
+  }
+  .banner{
+    background-color: black;
+    background-image:none;
+    opacity: 1;
+  }
+  .trans{
+    opacity: 1;
   }
 }

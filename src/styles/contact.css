@@ -1,0 +1,13 @@
+.Contact{
+  font-family: 'Arimo', sans-serif;
+}
+
+.contacts{
+  text-decoration: none;
+  color:black;
+  font-size:40px;
+}
+
+.contacts :hover{
+  font-size: 60px;
+}
