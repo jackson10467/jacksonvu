@@ -28,7 +28,8 @@ module.exports = {
       },
     },
     'react-burger-menu',
-    'react-animate-on-scroll'
+    'react-animate-on-scroll',
+    'react-compare-image'
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
