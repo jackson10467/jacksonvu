@@ -1,0 +1,13 @@
+.Home{
+  font-family: 'Roboto', sans-serif;
+}
+.Title{
+  font-size: 150px;
+  margin-top:25%;
+}
+
+@media screen and (max-width: 475px){
+  .Title{
+    font-size:80px;
+  }
+}

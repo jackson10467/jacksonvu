@@ -12,7 +12,7 @@ import Link from 'gatsby-link'
 import Header from "./header"
 import Nav from "./nav"
 import "./layout.css"
-import {slide as Menu} from 'react-burger-menu'
+import {pushRotate as Menu} from 'react-burger-menu'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -63,18 +63,20 @@ const Layout = ({ children }) => {
   return (
     <div id="outer-container">
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <Menu styles={styles} pageWrapId={ "page-wrap" } outerContainerId={"outer-container"}>
-        <Link className="menu-item" to="/">HOME</Link>
-        <Link className="menu-item" to="/about">ABOUT</Link>
-        <Link className="menu-item" to="/work">WORK</Link>
-        <Link className="menu-item" to="/contact">CONTACT</Link>
-      </Menu>
+      <div className="side">
+        <Menu styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+          <Link className="menu-item" to="/">HOME</Link>
+          <Link className="menu-item" to="/about">ABOUT</Link>
+          <Link className="menu-item" to="/work">WORK</Link>
+          <Link className="menu-item" to="/contact">CONTACT</Link>
+        </Menu>
+      </div>
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1080,
+          maxWidth: 900,
           padding: `0 1.0875rem 1.45rem`,
-          height:"100%"
+          height:"100vh"
         }}
       >
         <main id="page-wrap">{children}</main>
