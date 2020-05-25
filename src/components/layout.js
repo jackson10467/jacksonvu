@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
 import Header from "./header"
-import Nav from "./nav"
 import "./layout.css"
 import { pushRotate as Menu } from 'react-burger-menu'
 import pdf from "../images/resume.pdf"
