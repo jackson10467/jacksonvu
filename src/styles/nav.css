@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+.nav{
+  font-family: 'Arimo', sans-serif;
+  background-color: black;
+  height:15vh;
+  width:100%;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.links{
+  text-decoration: none;
+  flex-direction: row;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+
+li{
+  text-decoration: none;
+}
+
+.sig{
+  max-width: 100px;
+  max-height:100px;
+  margin:5%;
+}
+
+.l, a{
+  text-decoration: none;
+  color:white;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 400;
+  padding:3%;
+}
