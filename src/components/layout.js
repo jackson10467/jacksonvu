@@ -12,7 +12,8 @@ import Link from 'gatsby-link'
 import Header from "./header"
 import Nav from "./nav"
 import "./layout.css"
-import {pushRotate as Menu} from 'react-burger-menu'
+import { pushRotate as Menu } from 'react-burger-menu'
+import pdf from "../images/resume.pdf"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -75,7 +76,7 @@ const Layout = ({ children }) => {
           <Link className="menu-item" to="/">HOME</Link>
           <Link className="menu-item" to="/work">WORK</Link>
           <Link className="menu-item" to="/contact">CONTACT</Link>
-          <Link className="menu-item" to="/resume">RESUME</Link>
+          <a className="menu-item" href={pdf} rel="noopener noreferrer" target="_blank">RESUME</a>
         </Menu>
       </div>
       <div

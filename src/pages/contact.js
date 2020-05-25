@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import "../styles/contact.css"
 
-const About = () => {
+const Contact = () => {
   return (
    <Layout> 
     <SEO title="Contact" />
@@ -17,4 +17,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Contact

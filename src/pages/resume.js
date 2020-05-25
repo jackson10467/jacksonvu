@@ -1,16 +1,14 @@
 import React from 'react'
 import SEO from "../components/seo"
 import Layout from "../components/layout"
+import pdf from "../images/resume.pdf"
 
-const About = () => {
+const Resume = () => {
   return (
    <Layout> 
-    <SEO title="About" />
-    <h1>Resume Page</h1>
-    <p></p>
-      <p>Now go build something great.</p>
+    
   </Layout>
   )
 }
 
-export default About
+export default Resume
