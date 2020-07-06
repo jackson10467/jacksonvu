@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
 import Header from "./header"
 import "./layout.css"
-import { pushRotate as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 import pdf from "../images/resume.pdf"
 
 const Layout = ({ children }) => {
@@ -53,7 +53,8 @@ const Layout = ({ children }) => {
     },
     bmItemList: {
       color: '#b8b7ad',
-      padding: '0.8em'
+      padding: '0.8em',
+      textDecoration: 'none',
     },
     bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)'
@@ -63,7 +64,18 @@ const Layout = ({ children }) => {
       margin: '15px',
       padding: '15px',
       fontWeight: "bold"
+    },
+    menuItem: {
+      color: "white",
+      textDecoration:"none"
+    },
+    bmItem: {
+      color: "white",
+      textDecoration: "none",
+      fontFamily: "Arimo",
+      margin:"25px"
     }
+
 
   }
 
@@ -71,7 +83,7 @@ const Layout = ({ children }) => {
     <div id="outer-container">
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="side">
-        <Menu styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} disableAutoFocus>
+        <Menu styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} disableAutoFocus >
           <Link className="menu-item" to="/">HOME</Link>
           <Link className="menu-item" to="/work">WORK</Link>
           <Link className="menu-item" to="/contact">CONTACT</Link>
