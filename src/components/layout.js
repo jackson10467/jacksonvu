@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
 import Header from "./header"
 import "./layout.css"
-import { slide as Menu } from 'react-burger-menu'
+import { push as Menu } from 'react-burger-menu'
 import pdf from "../images/resume.pdf"
 
 const Layout = ({ children }) => {
@@ -81,7 +81,6 @@ const Layout = ({ children }) => {
 
   return (
     <div id="outer-container">
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div className="side">
         <Menu styles={styles} pageWrapId={"page-wrap"} outerContainerId={"outer-container"} disableAutoFocus >
           <Link className="menu-item" to="/">HOME</Link>
@@ -90,17 +89,17 @@ const Layout = ({ children }) => {
           <a className="menu-item" href={pdf} rel="noopener noreferrer" target="_blank">RESUME</a>
         </Menu>
       </div>
-      <div
+      {/* <div
         style={{
           margin: `0 auto`,
           maxWidth: 1080,
           padding: `0 1.0875rem 1.45rem`,
           height:"100vh"
         }}
-      >
+      > */}
         <main id="page-wrap">{children}</main>
       </div>
-    </div>
+    // </div>
   )
 }
 

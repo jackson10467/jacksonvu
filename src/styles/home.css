@@ -1,5 +1,7 @@
 .Home{
   font-family: 'Roboto', sans-serif;
+  margin-left:10%;
+  padding-right: 10%;
 }
 .Title{
   font-size: 150px;
