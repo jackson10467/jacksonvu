@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Link from 'gatsby-link'
 import Header from "./header"
 import "./layout.css"
-import { slide as Menu } from 'react-burger-menu'
+import { stack as Menu } from 'react-burger-menu'
 import pdf from "../images/resume.pdf"
 
 const Layout = ({ children }) => {
