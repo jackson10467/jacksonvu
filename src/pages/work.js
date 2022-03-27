@@ -32,12 +32,6 @@ const Work = () => {
             <p className="Desc">A solo personal project that is meant to be a note taking app, also a full stack application with authentication and CRUD. Rails backend with a React front end. Currently still in progress, with a big overhaul due soon as of May 25th 2020</p>
             <a className="pLink" href="http://jot-jv.surge.sh/">Online</a>
           </div>
-          <h3 className="Item">NewsFlash</h3>
-          <div className="flex-itm">
-            <img className="pimg" src="https://i.imgur.com/IQZuKjB.jpg"></img>
-            <p className="Desc">A solo project meant to be a news aggregator, purely React frontend, calling NewsAPI for data. Currently being revamped and will be back online at a later date.</p>
-            <a className="pLink">Currently Offline</a>
-          </div>
         </div>
     </div>
   </Layout>

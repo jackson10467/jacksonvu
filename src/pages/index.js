@@ -20,7 +20,8 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <p className="aboutp">I'm a web developer and software engineer who is passionate about visual communication, with a focus on designing and developing for the modern web. I'm currently looking for opportunities to grow both as a person and as a developer, whether that be through freelance work or at an organization.</p>  
+      <p className="aboutp">I'm a web developer and tech enthusiast who is passionate about visual communication, with a focus on designing and developing for the modern web.
+    I'm proud to be a member of the team at <a href="https://www.getreprise.com/">Reprise</a> as a Customer Support Engineer enabling successful customer outcomes and helping to fuel product led growth.</p>  
     <div className="img">
       - <Image />
     </div>
